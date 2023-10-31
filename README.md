@@ -20,7 +20,8 @@ This application covers the below functionalities:
 
 ### Project Technologies
 
-- Java 17
+- Java version: 17.0.8, vendor: Oracle Corporation
+- Apache Maven 3.2.3
 - Spring boot 3.1.5
 - PostgreSql Database
 - Spring boot JPA
@@ -50,7 +51,17 @@ PostgreSQL offers two types for storing JSON data:
 
 ### OpenAPI Specification
 
+- Path
+- 
 http://localhost:8081/my-application/swagger-ui/index.html
+
+- Swagger Authorization
+
+![24_swagger_authorization.PNG](screenshots%2F24_swagger_authorization.PNG)
+
+- Swagger UI Details
+
+![25_swagger_ui.png](screenshots%2F25_swagger_ui.png)
 
 ### Disable OpenAPI Swagger for Production Environment
 
