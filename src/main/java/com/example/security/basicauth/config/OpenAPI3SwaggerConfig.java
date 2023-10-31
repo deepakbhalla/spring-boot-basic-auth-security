@@ -39,14 +39,16 @@ public class OpenAPI3SwaggerConfig {
 
         Info info = new Info()
                 .title((StringUtils.join(appName)))
-                .description("Spring boot sample application to demonstrate JSONB data type support using PostgreSQL database along with OpenAPI 3 specifications")
+                .description("Spring boot sample application to demonstrate Spring boot security using Basic Auth type. " +
+                        "This application has APIs to create and manage Users, Accounts and Transactions. It utilizes " +
+                        "JSONB data type supported by PostgreSQL database along with OpenAPI 3 specifications.")
                 .version("1.0")
                 .contact(contact)
                 .license(new License().name("My Application 1.0").url("www.google.com"));
 
         SecurityRequirement securityRequirement = new SecurityRequirement();
         Components components = new Components();
-        components.addSecuritySchemes("basicAuth", new SecurityScheme().name("basicAuth")
+        components.addSecuritySchemes("Basic Auth", new SecurityScheme().name("basicAuth")
                 .type(SecurityScheme.Type.HTTP).scheme("basic"));
         securityRequirement.addList("basicAuth");
 

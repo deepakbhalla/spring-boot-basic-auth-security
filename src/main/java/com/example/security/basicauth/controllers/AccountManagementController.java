@@ -35,7 +35,7 @@ import java.util.List;
  */
 @Tag(name = "Account Management", description = "Account Management APIs")
 @RestController
-@RequestMapping("/account")
+@RequestMapping("/api/account")
 public class AccountManagementController {
 
     @Autowired
@@ -80,7 +80,7 @@ public class AccountManagementController {
                     content = { @Content(mediaType = "application/json", schema = @Schema(implementation = Account.class)) }),
             @ApiResponse(responseCode = "400", description = "Invalid account number supplied", content = @Content),
             @ApiResponse(responseCode = "404", description = "Account not found", content = @Content) })
-    @GetMapping(value = "/{accountNumber}/balance", produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.ALL_VALUE)
+    @GetMapping(value = "/{accountNumber}", produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.ALL_VALUE)
     public Account getAccountBalance(
             @Parameter(description = "Account number to be searched")
             @PathVariable("accountNumber") String accountNumber) throws ResourceNotFoundException, BadRequestException {

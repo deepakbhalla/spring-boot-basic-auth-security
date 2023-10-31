@@ -8,6 +8,9 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
+/**
+ * Creates different events for an account.
+ */
 public class AccountTransactionEventBuilder {
 
     public static List<Transaction> createAccountSuccessfulEvent() {

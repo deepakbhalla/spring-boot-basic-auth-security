@@ -16,7 +16,8 @@ public enum AccountConstants {
     EVENT_DEPOSIT("deposit"),
     EVENT_WITHDRAWAL("withdrawal"),
     COMMA(","),
-    INSUFFICIENT_ACCOUNT_BALANCE("Withdrawal amount is greater than the available account balance.");
+    INSUFFICIENT_ACCOUNT_BALANCE("Withdrawal amount is greater than the available account balance."),
+    USER_NOT_FOUND("User not found.");
 
     public final String message;
 

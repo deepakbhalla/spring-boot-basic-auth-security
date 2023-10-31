@@ -24,7 +24,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @Tag(name = "Account Transactions", description = "Account Transactions APIs")
 @RestController
-@RequestMapping("/transaction")
+@RequestMapping("/api/transaction")
 public class AccountTransactionsController {
 
     @Autowired

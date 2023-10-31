@@ -19,7 +19,7 @@ public class SecurityConfig {
 
     public static final String[] ENDPOINTS_WHITELIST = {
             "/health",
-            "/api/auth/**",
+            "/api/user/signup",
             "/v3/api-docs.yaml",
             "/v3/api-docs/**",
             "/swagger-ui/**",
