@@ -93,11 +93,11 @@ If the value of spring profile is 'prod', then swagger won't be available. Pleas
 
 - Create New User - Validation Error
 
-![4_create_user_password_different_from_matching_password.PNG](screenshots%2F4_create_user_password_different_from_matching_password.PNG)
+![3_create_user_input_validation_error.PNG](screenshots%2F3_create_user_input_validation_error.PNG)
 
 - Create User - Password and MatchPassword Does not Match Validation Error
 
-![3_create_user_input_validation_error.PNG](screenshots%2F3_create_user_input_validation_error.PNG)
+![4_create_user_password_different_from_matching_password.PNG](screenshots%2F4_create_user_password_different_from_matching_password.PNG)
 
 - Create User - Success - No Auth
 
