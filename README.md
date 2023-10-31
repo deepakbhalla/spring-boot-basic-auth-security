@@ -52,7 +52,7 @@ PostgreSQL offers two types for storing JSON data:
 ### OpenAPI Specification
 
 - Path
-- 
+
 http://localhost:8081/my-application/swagger-ui/index.html
 
 - Swagger Authorization
